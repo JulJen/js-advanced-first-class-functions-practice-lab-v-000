@@ -42,7 +42,7 @@ const driversByName = function (drivers) {
 
 // Receives an array of driver objects and returns the sum of the revenue earned by each driver
 const totalRevenue = function (drivers) {
-  return drivers.reduce( ( p, c ) => p + c, 0 );
+  return drivers.reduce( ( total, driver ) => total + driver.revenue, 0 );
   // return drivers.reduce( function (total, driver) {
   //   return total + driver.revenue; }, 0
   // );
