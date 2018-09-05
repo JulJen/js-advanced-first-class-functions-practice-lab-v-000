@@ -31,11 +31,13 @@ const driversByRevenue = function (drivers) {
 // Receives an array of driver objects and returns a new array of driver objects sorted by their name attribute from A to Z. Here, you may have to use the String.prototype.localeCompare() method.
 const driversByName = function (drivers) {
   const orderNames = [...drivers];
-
-  return orderNames.sort( function (a, b) {
-    return (a.name).localeCompare(b.name);
-  })
+  
+  return orderNames.sort( (a, b) => (a.name).localeCompare(b.name) );
 };
+//   return orderNames.sort( function (a, b) {
+//     return (a.name).localeCompare(b.name);
+//   })
+// };
 
 
 // const average = arr => arr.reduce( ( p, c ) => p + c, 0 ) / arr.length;
