@@ -22,11 +22,18 @@ const logDriversByHometown = function(drivers, hometown) {
 // Receives an array of driver objects and returns a new array of driver objects sorted by their revenue attribute from lowest to highest
 const driversByRevenue = function (drivers) {
   const orderRevenues = [...drivers];
-
-  return orderRevenues.sort( function (a, b) {
-    return a.revenue - b.revenue;
-  })
+  return orderNames.sort( (a, b) => a.revenue - b.revenue );
 };
+
+// // //EcmaScript5 solution
+// const driversByRevenue = function (drivers) {
+//   const orderRevenues = [...drivers];
+//
+//   return orderRevenues.sort( function (a, b) {
+//     return a.revenue - b.revenue;
+//   })
+// };
+
 
 // Receives an array of driver objects and returns a new array of driver objects sorted by their name attribute from A to Z. Here, you may have to use the String.prototype.localeCompare() method.
 const driversByName = function (drivers) {
