@@ -8,7 +8,6 @@ const logDriverNames = function (drivers) {
 };
 
 
-
 // Receives an array of driver objects as the first argument and a location as the second argument. The function logs to the console the name attribute of each driver whose hometown matches the string passed in as the 'location' argument.
 const logDriversByHometown = function(drivers, hometown) {
   drivers.forEach( function (driver) {
@@ -49,6 +48,8 @@ const driversByName = function (drivers) {
 //   })
 // };
 
+
+
 // // reference
 // const average = arr => arr.reduce( ( p, c ) => p + c, 0 ) / arr.length;
 
@@ -63,6 +64,7 @@ const totalRevenue = function (drivers) {
 //     return total + driver.revenue; }, 0
 //   );
 // };
+
 
 
 // Receives an array of driver objects and returns the average revenue earned by each driver
