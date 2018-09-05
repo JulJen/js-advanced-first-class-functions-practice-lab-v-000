@@ -31,9 +31,12 @@ const driversByRevenue = function (drivers) {
 // Receives an array of driver objects and returns a new array of driver objects sorted by their name attribute from A to Z. Here, you may have to use the String.prototype.localeCompare() method.
 const driversByName = function (drivers) {
   const orderNames = [...drivers];
-  
   return orderNames.sort( (a, b) => (a.name).localeCompare(b.name) );
 };
+
+// // version ES5 solution
+// const driversByName = function (drivers) {
+//   const orderNames = [...drivers];
 //   return orderNames.sort( function (a, b) {
 //     return (a.name).localeCompare(b.name);
 //   })
@@ -47,7 +50,7 @@ const totalRevenue = function (drivers) {
   return drivers.reduce( ( total, driver ) => total + driver.revenue, 0 );
 };
 
-// // ES5 solution
+// // version ES5 solution 
 // const totalRevenue = function (drivers) {
 //   return drivers.reduce( function (total, driver) {
 //     return total + driver.revenue; }, 0
