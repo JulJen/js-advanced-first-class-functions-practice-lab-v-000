@@ -34,7 +34,7 @@ const driversByName = function (drivers) {
   return orderNames.sort( (a, b) => (a.name).localeCompare(b.name) );
 };
 
-// // version ES5 solution
+// //EcmaScript5 solution
 // const driversByName = function (drivers) {
 //   const orderNames = [...drivers];
 //   return orderNames.sort( function (a, b) {
@@ -50,7 +50,7 @@ const totalRevenue = function (drivers) {
   return drivers.reduce( ( total, driver ) => total + driver.revenue, 0 );
 };
 
-// // version ES5 solution 
+// //EcmaScript5 solution
 // const totalRevenue = function (drivers) {
 //   return drivers.reduce( function (total, driver) {
 //     return total + driver.revenue; }, 0
